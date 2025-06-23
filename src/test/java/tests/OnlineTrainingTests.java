@@ -8,6 +8,7 @@ import pages.OnlineCoursesPage;
 
 import java.util.stream.Stream;
 
+@Tag("alltest")
 @Tag("onlinecourse")
 public class OnlineTrainingTests extends TestBase {
     OnlineCoursesPage onlineCoursesPage = new OnlineCoursesPage();

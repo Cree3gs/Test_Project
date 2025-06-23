@@ -67,3 +67,9 @@ task onlinecourse_test(type: Test) {
         includeTags("onlinecourse")
     }
 }
+
+task full_project_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("alltest")
+    }
+}

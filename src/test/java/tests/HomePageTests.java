@@ -10,6 +10,7 @@ import pages.MainPage;
 
 import java.util.stream.Stream;
 
+@Tag("alltest")
 @Tag("mainpage")
 public class HomePageTests extends TestBase {
 
