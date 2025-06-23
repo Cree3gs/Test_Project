@@ -27,7 +27,7 @@
 - Проверка корректной работы фильтра в разделе обучения
 - Проверка заполнения обязательных полей формы обратной связи
 
-## <img alt="Jenkins" src="media/Jenkins.svg" width="40" height="40"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/C35_Evgenia_Malysheva_testwork/)
+## <img alt="Jenkins" src="media/Jenkins.svg" width="40" height="40"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/001-sobaka_govorit_muu_Test_Project_java_35_jenkins/)
 
 
 <p align="center">  
@@ -47,7 +47,7 @@
 ## Команда для запуска из терминала
 Локальный запуск
 ```bash
-gradle clean testwork
+gradle clean ${TASK}
 ```
 Запуск с параметрами:
 ```bash  
@@ -55,16 +55,16 @@ gradle clean testwork
 ```
 Удаленный запуск через Jenkins:
 ```bash  
-clean
-testwork
--Dbrowser=${BROWSER}
-"-Dversion=${VERSION}"
-"-Dresolution=${RESOLUTION}"
-"-DselenoidCredentials=${SELENOID_USER}:${SELENOID_PASSWORD}@"
-"-DselenoidUrl=${SELENOID_HOST}""
+clean ${TASK} 
+-Dselenoid.url=${SELENOID_URL} 
+-Dselenoid.login=${SELENOID_LOGIN} 
+-Dselenoid.password=${SELENOID_PASSWORD} 
+-Dbrowser=${BROWSER} 
+-Dbrowser.version=${BROWSER_VERSION} 
+-Dbrowser.size=${BROWSER_SIZE}
 ```
 
-## <img alt="Allure" src="media/Allure.svg" height="40" width="40"/></a>  <a name="Allure"></a>Allure [Report](https://jenkins.autotests.cloud/job/C35_Evgenia_Malysheva_testwork/allure/)	</a>
+## <img alt="Allure" src="media/Allure.svg" height="40" width="40"/></a>  <a name="Allure"></a>Allure [Report](https://jenkins.autotests.cloud/job/001-sobaka_govorit_muu_Test_Project_java_35_jenkins/allure/)	</a>
 
 
 ## Основная страница отчёта
