@@ -30,16 +30,16 @@
 - Проверка корректной работы фильтра в разделе обучения
 - Проверка заполнения обязательных полей формы обратной связи
 
-## <img alt="Jenkins" src="media/Jenkins.svg" width="40" height="40"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/001-sobaka_govorit_muu_Test_Project_java_35_jenkins/)
+## <img alt="Jenkins" src="media/Jenkins.svg" width="40" height="40"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/001-sobaka_govorit_muu_Test_Project_java_35_jenkins/build?delay=0sec)
 
 <p align="center">  
-<img src="media/JenkinsBuild.jpg" alt="Jenkins" width="950"/></a>  
+<img src="media/JenkinsBuild.png" alt="Jenkins" width="950"/></a>  
 </p>
 
 ## ☑️ Параметры сборки в Jenkins:
 
 - browser (браузер, по умолчанию chrome)
-- browserVersion (версия браузера, по умолчанию 113)
+- browserVersion (версия браузера, по умолчанию 127.0)
 - browserSize (размер окна браузера, по умолчанию 1920x1080)
 - selenoidCredentials (логин и пароль)
 - selenoidUrl (адрес Selenoid)
@@ -70,12 +70,12 @@ clean ${TASK}
 -Dbrowser.size=${BROWSER_SIZE}
 ```
 
-## <img alt="Allure" src="media/Allure.svg" height="40" width="40"/></a>  <a name="Allure"></a>Allure [Report](https://jenkins.autotests.cloud/job/001-sobaka_govorit_muu_Test_Project_java_35_jenkins/allure/)    </a>
+## <img alt="Allure" src="media/Allure.svg" height="40" width="40"/></a>  <a name="Allure"></a>Allure [Report](https://jenkins.autotests.cloud/job/001-sobaka_govorit_muu_Test_Project_java_35_jenkins/8/allure/#suites/7f9d8baf248447e4d019dfa37c0ac4ba/b72c556894322309/)    </a>
 
 ## Основная страница отчёта
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/AllureReport.jpg" width="850">  
+<img title="Allure Overview Dashboard" src="media/AllureReport.png" width="850">  
 </p>  
 
 ____
@@ -84,7 +84,7 @@ ____
 
 ____
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/tgAllert.jpg" width="550">  
+<img title="Allure Overview Dashboard" src="media/tgAllert.png" width="550">  
 </p>
 
 ____
