@@ -40,7 +40,7 @@ public class HomePageTests extends TestBase {
 
     @DisplayName("Проверка контактной информации")
     @Test
-    void availabilityOfContactInformation(){
+    void availabilityOfContactInformation() {
         mainPage
                 .openMainPage()
                 .checkYandexMap()

@@ -11,6 +11,8 @@ import java.util.stream.Stream;
 @Tag("alltest")
 @Tag("onlinecourse")
 public class OnlineTrainingTests extends TestBase {
+
+
     OnlineCoursesPage onlineCoursesPage = new OnlineCoursesPage();
 
     @MethodSource()
@@ -20,6 +22,7 @@ public class OnlineTrainingTests extends TestBase {
                 .openMainPage()
                 .goToSection(idSection, headerSection);
     }
+
     static Stream<Arguments> transitionToTrainingSectionsTest() {
         return Stream.of(
                 Arguments.of(".service_71", "Онлайн обучение"),
@@ -28,13 +31,15 @@ public class OnlineTrainingTests extends TestBase {
                 Arguments.of(".service_4", "Курсы коррекции и окрашивания бровей")
         );
     }
+
     @MethodSource()
     @ParameterizedTest(name = "Проверка корректности работы фильтра {1}")
-    void checkingTheFilterOperation(String filterName, String headerSection){
+    void checkingTheFilterOperation(String filterName, String headerSection) {
         onlineCoursesPage
                 .openOnlineCoursePage()
                 .onlineLessonsFilterCheck(filterName, headerSection);
     }
+
     static Stream<Arguments> checkingTheFilterOperation() {
         return Stream.of(
                 Arguments.of("href=\"?type=lesson\"", "Онлайн-урок"),

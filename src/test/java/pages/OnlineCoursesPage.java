@@ -3,7 +3,6 @@ package pages;
 import io.qameta.allure.Step;
 import tests.TestBase;
 
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -31,7 +30,7 @@ public class OnlineCoursesPage extends TestBase {
 
     @Step("Отфильтровать по значению Онлайн-урок")
     public OnlineCoursesPage onlineLessonsFilterCheck(String filterName, String cardText) {
-        $(".t__headerlink[" + filterName+ "]").click();
+        $(".t__headerlink[" + filterName + "]").click();
         $("div.c__list-item-title").shouldHave(text(cardText));
         return this;
     }
